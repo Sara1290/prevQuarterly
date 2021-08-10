@@ -3,7 +3,7 @@ import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
-am4core.useTheme(am4themes_animated);
+
 
 const Pie = (props) => {
 
@@ -54,7 +54,7 @@ const Pie = (props) => {
 
   return (
     <div>
-        Annual Overall Risk
+       <h2>Annual Overall Risk</h2>
       <div id="chartdiv" style={{ width: "100%", height: "500px" }}>
       </div>
     </div>
