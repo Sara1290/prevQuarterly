@@ -70,7 +70,7 @@ const Bubble = (props) => {
       series.dataFields.value = "value";
     series.dataFields.name = "name";
     series.dataFields.children = "children";
-    series.nodes.template.tooltipText = "{name}:{value}";
+    series.nodes.template.tooltipText = "{name}";
     series.nodes.template.fillOpacity = 1;
 
 
@@ -112,7 +112,7 @@ series.nodes.template.events.on("out", function(event) {
 }, []);
   return (
     <div className="bubble-outer">
-        <div id="bubblediv" style={{ width: "100%", height: "500px" }}>
+        <div id="bubblediv">
         </div>
     </div>
   )

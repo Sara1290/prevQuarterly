@@ -58,7 +58,7 @@ const Bar = () => {
     categoryAxis.dataFields.category = "name";
     categoryAxis.title.text = "Categories";
     categoryAxis.renderer.grid.template.location = 0;
-    categoryAxis.renderer.minGridDistance = 20;
+    // categoryAxis.renderer.minGridDistance = 0;
 
     
     var  valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
