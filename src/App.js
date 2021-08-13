@@ -2,6 +2,7 @@
 import './App.css';
 import Bar from './Components/Bar';
 import Bubble from './Components/Bubble';
+import Header from './Components/Header';
 import Pie from './Components/Pie';
 
 
@@ -9,10 +10,11 @@ import Pie from './Components/Pie';
 function App() {
   return (
     <div className="App">
-      <h1>Summary June 2021</h1>
-      <Pie />
-      <Bubble />
- 
+      <Header />
+        <div className="pie-bubble">
+            <Pie />
+            <Bubble />
+        </div>
       <Bar />
     </div>
   );

@@ -15,7 +15,7 @@ const Bubble = (props) => {
     {
       "name": "Previdence Assessment Panels Taken",
       "value" : 22,
-      "color": "#e00"
+      "color": "#063"
     },{
       "name": "Previdence Assessment Panels Remaining",
       "value": 0, 
@@ -43,7 +43,7 @@ const Bubble = (props) => {
     }, {
       "name" :"Family Members in Treatment in the Previdence Provider Network",
       "value": 0,
-      "color": "#063"
+      "color": "#093"
     }
   ];
   

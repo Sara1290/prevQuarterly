@@ -107,7 +107,7 @@ const Bar = () => {
     series4.stacked = true;
   
 
-    chart.legend = new am4charts.Legend();
+    // chart.legend = new am4charts.Legend();
     
     chart.dataFields.color = "color";
 
@@ -173,7 +173,8 @@ const Bar = () => {
 
   return (
     <div className="bar-outer">
-      <div id="bardiv" style={{ width: "75%", height: "500px" }}>
+      <h2>Annual Assessment Overview</h2>
+      <div id="bardiv">
 
       </div>
     </div>

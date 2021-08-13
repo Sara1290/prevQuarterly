@@ -10,7 +10,7 @@ const Pie = (props) => {
 
   useLayoutEffect(() => {
     am4core.useTheme(am4themes_animated);
-    let chart = am4core.create("chartdiv", am4charts.PieChart3D);
+    let chart = am4core.create("piediv", am4charts.PieChart3D);
     
     chart.data = [{
       "risk": "High",
@@ -55,7 +55,7 @@ const Pie = (props) => {
   return (
     <div className="pie-outer">
        <h2>Annual Overall Risk</h2>
-      <div id="chartdiv">
+      <div id="piediv">
       </div>
     </div>
     )
