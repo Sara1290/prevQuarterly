@@ -67,9 +67,51 @@ const Bubble = (props) => {
     am4core.color("#019D01")
   ]
 
+      series.dataFields.value = "value";
+    series.dataFields.name = "name";
+    series.dataFields.children = "children";
+    series.nodes.template.tooltipText = "{name}:{value}";
+    series.nodes.template.fillOpacity = 1;
+
+
+
+      series.nodes.template.label.adapter.add("fill", function(fill, target) {
+    if (target.dataItem.level > 0) {
+      target.dy = -15;
+      target.verticalCenter = "bottom";
+      return am4core.color("#000");
+    }
+    return fill;
+  })
+
+
+
+  var hoverState = series.links.template.states.create("hover");
+hoverState.properties.strokeWidth = 3;
+hoverState.properties.strokeOpacity = 1;
+
+    series.nodes.template.events.on("over", function(event) {
+  event.target.dataItem.childLinks.each(function(link) {
+    link.isHover = true;
+  })
+  if (event.target.dataItem.parentLink) {
+    event.target.dataItem.parentLink.isHover = true;
+  }
+
+})
+
+series.nodes.template.events.on("out", function(event) {
+  event.target.dataItem.childLinks.each(function(link) {
+    link.isHover = false;
+  })
+  if (event.target.dataItem.parentLink) {
+    event.target.dataItem.parentLink.isHover = false;
+  }
+})
+
 }, []);
   return (
-    <div>
+    <div className="bubble-outer">
         <div id="bubblediv" style={{ width: "100%", height: "500px" }}>
         </div>
     </div>

@@ -53,7 +53,7 @@ const Pie = (props) => {
   }, []);
 
   return (
-    <div>
+    <div className="pie-outer">
        <h2>Annual Overall Risk</h2>
       <div id="chartdiv" style={{ width: "100%", height: "500px" }}>
       </div>
