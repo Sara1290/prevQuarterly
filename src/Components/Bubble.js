@@ -35,7 +35,7 @@ const Bubble = (props) => {
     }, {
       "name": "Family Members Offered Assessments",
       "value": 2,
-      "color": "#B3B"
+      "color": "#09f"
     }, {
       "name": "Family Member Assessments Taken",
       "value": 1,
