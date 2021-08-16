@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap');
+
 .App {
   display: grid;
   text-align: center;
  
 }
 
-.header {
-  box-shadow: 0px 14px 9px 4px rgba(0,0,0,0.2);
+
+.org-container {
+  display: flex;
+  justify-content: center;
+}
+.line {
+  height: 2px;
+  width: 15vw;
+  background-color: black;
+}
+#org {
+  position: relative;
+  bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* graph containers */
@@ -14,6 +29,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgb(205, 226, 233);
+  margin-top: 40px;
 }
 .bar-outer {
   display: flex;
@@ -41,42 +58,48 @@
   width: 100%;
   height: 500px;
 }
+.footer-outer {
+  display: flex; 
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.vert-line {
+  height: 60px;
+  width: 2px;
+  background-color: black;
+  margin-right: 30px;
+  margin-left: 30px;
+}
 
 /*  */
 @media screen and (min-width: 450px) {
   #piediv {
     width: 45%;
     height: 500px;
-    /* border-radius: 20px;
-    box-shadow:14px 14px 11px 15px rgba(0,0,0,0.25); */
   }
   #bubblediv {
     width: 65%;
     height: 500px;
-    /* border-radius: 20px;
-    box-shadow:14px 14px 11px 15px rgba(0,0,0,0.25); */
   }
   #bardiv {
     width: 75%;
     height: 500px;
-    /* border-radius: 20px;
-    box-shadow:14px 14px 11px 15px rgba(0,0,0,0.25); */
   }
   .pie-outer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     justify-content: center;
     padding-left: 75px;
   }
   .bubble-outer {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
-    padding-right: 75px;
-    position: relative;
-    bottom: 75px;
+    /* align-items: flex-end; */
+    /* padding-right: 75px; */
+    /* position: relative; */
+    /* bottom: 75px; */
   }
   .bar-outer {
     display: flex;
@@ -86,19 +109,19 @@
     position: relative;
     padding-bottom: 50px;
   }
-  .header-outer {
+  .pie-inner {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
-  .header {
-    border-radius: 50px 0 50px 0;
-    box-shadow: 0px 9px 19px 2px rgba(0,0,0,0.2);
+  .header-outer {
+   background-color: rgb(213, 226, 238); 
   }
   h2 {
     font-size: 40px;
   }
-  h1 {
+  h1{
     font-size: 60px;
+    font-family: 'Titillium Web', sans-serif;
   }
 }
 

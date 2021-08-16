@@ -2,6 +2,7 @@
 import './App.css';
 import Bar from './Components/Bar';
 import Bubble from './Components/Bubble';
+import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Pie from './Components/Pie';
 
@@ -16,6 +17,7 @@ function App() {
             <Bubble />
         </div>
       <Bar />
+      <Footer />
     </div>
   );
 }
