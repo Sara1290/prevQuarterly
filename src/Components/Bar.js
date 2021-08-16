@@ -112,61 +112,61 @@ const Bar = () => {
     chart.dataFields.color = "color";
 
 
-    let shadow = series.columns.template.filters.push(new am4core.DropShadowFilter);
-      shadow.opacity = 0.1;
+    // let shadow = series.columns.template.filters.push(new am4core.DropShadowFilter);
+    //   shadow.opacity = 0.1;
 
-    let hoverState = series.columns.template.states.create("hover");
-      hoverState.properties.fill = am4core.color("#396478");
-      hoverState.properties.dx = -5;
-      hoverState.properties.dy = -5;
+    // let hoverState = series.columns.template.states.create("hover");
+    //   hoverState.properties.fill = am4core.color("#396478");
+    //   hoverState.properties.dx = -5;
+    //   hoverState.properties.dy = -5;
 
-      /* Slightly shift the shadow and make it more prominent on hover */
-    let hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter);
-        hoverShadow.dx = 6;
-        hoverShadow.dy = 6;
-        hoverShadow.opacity = 0.3;
+    //   /* Slightly shift the shadow and make it more prominent on hover */
+    // let hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter);
+    //     hoverShadow.dx = 6;
+    //     hoverShadow.dy = 6;
+    //     hoverShadow.opacity = 0.3;
 
-      let shadow2 = series2.columns.template.filters.push(new am4core.DropShadowFilter);
-      shadow2.opacity = 0.1;
+    //   let shadow2 = series2.columns.template.filters.push(new am4core.DropShadowFilter);
+    //   shadow2.opacity = 0.1;
   
-      let hoverState2 = series2.columns.template.states.create("hover");
-        hoverState2.properties.fill = am4core.color("#396478");
-        hoverState2.properties.dx = -5;
-        hoverState2.properties.dy = -5;
+    //   let hoverState2 = series2.columns.template.states.create("hover");
+    //     hoverState2.properties.fill = am4core.color("#396478");
+    //     hoverState2.properties.dx = -5;
+    //     hoverState2.properties.dy = -5;
   
-        /* Slightly shift the shadow and make it more prominent on hover */
-      let hoverShadow2 = hoverState.filters.push(new am4core.DropShadowFilter);
-      hoverShadow2.dx = 6;
-      hoverShadow2.dy = 6;
-      hoverShadow2.opacity = 0.3;
+    //     /* Slightly shift the shadow and make it more prominent on hover */
+    //   let hoverShadow2 = hoverState.filters.push(new am4core.DropShadowFilter);
+    //   hoverShadow2.dx = 6;
+    //   hoverShadow2.dy = 6;
+    //   hoverShadow2.opacity = 0.3;
 
-      let shadow3 = series3.columns.template.filters.push(new am4core.DropShadowFilter);
-      shadow3.opacity = 0.1;
+    //   let shadow3 = series3.columns.template.filters.push(new am4core.DropShadowFilter);
+    //   shadow3.opacity = 0.1;
   
-      let hoverState3 = series3.columns.template.states.create("hover");
-        hoverState3.properties.fill = am4core.color("#396478");
-        hoverState3.properties.dx = -5;
-        hoverState3.properties.dy = -5;
+    //   let hoverState3 = series3.columns.template.states.create("hover");
+    //     hoverState3.properties.fill = am4core.color("#396478");
+    //     hoverState3.properties.dx = -5;
+    //     hoverState3.properties.dy = -5;
   
-        /* Slightly shift the shadow and make it more prominent on hover */
-      let hoverShadow3 = hoverState.filters.push(new am4core.DropShadowFilter);
-          hoverShadow3.dx = 6;
-          hoverShadow3.dy = 6;
-          hoverShadow3.opacity = 0.3;
+    //     /* Slightly shift the shadow and make it more prominent on hover */
+    //   let hoverShadow3 = hoverState.filters.push(new am4core.DropShadowFilter);
+    //       hoverShadow3.dx = 6;
+    //       hoverShadow3.dy = 6;
+    //       hoverShadow3.opacity = 0.3;
 
-      let shadow4 = series4.columns.template.filters.push(new am4core.DropShadowFilter);
-      shadow4.opacity = 0.1;
+    //   let shadow4 = series4.columns.template.filters.push(new am4core.DropShadowFilter);
+    //   shadow4.opacity = 0.1;
   
-      let hoverState4 = series4.columns.template.states.create("hover");
-        hoverState4.properties.fill = am4core.color("#396478");
-        hoverState4.properties.dx = -5;
-        hoverState4.properties.dy = -5;
+    //   let hoverState4 = series4.columns.template.states.create("hover");
+    //     hoverState4.properties.fill = am4core.color("#396478");
+    //     hoverState4.properties.dx = -5;
+    //     hoverState4.properties.dy = -5;
   
-        /* Slightly shift the shadow and make it more prominent on hover */
-      let hoverShadow4 = hoverState.filters.push(new am4core.DropShadowFilter);
-          hoverShadow4.dx = 6;
-          hoverShadow4.dy = 6;
-          hoverShadow4.opacity = 0.3;
+    //     /* Slightly shift the shadow and make it more prominent on hover */
+    //   let hoverShadow4 = hoverState.filters.push(new am4core.DropShadowFilter);
+    //       hoverShadow4.dx = 6;
+    //       hoverShadow4.dy = 6;
+    //       hoverShadow4.opacity = 0.3;
 
 
   }, []);
