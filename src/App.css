@@ -58,6 +58,7 @@
   width: 100%;
   height: 500px;
 }
+
 .footer-outer {
   display: flex; 
   justify-content: center;
@@ -114,7 +115,7 @@
     justify-content: space-between;
   }
   .header-outer {
-   background-color: rgb(213, 226, 238); 
+   background-color: azure; 
   }
   h2 {
     font-size: 40px;
